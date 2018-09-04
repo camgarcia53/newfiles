@@ -24,7 +24,7 @@ console.log(i)
  * Create a loop that prints every even number between 0 and 100.
  
 
- for (i = 0; i < 100; i+=2) {
+ for (let i = 0; i < 100; i+=2) {
   console.log(i)
  }
 
@@ -32,19 +32,32 @@ console.log(i)
  * Prompt:
  *
  * Create a loop that counts from -5 to 5, printing each number.
- */
+ 
 
-/*
+for (let i = -5; i < 5; i++) {
+  console.log(i)
+}
+
+
+
  * Prompt:
  *
  * Create a loop that counts down from 10 to 0, printing each number.
- */
+ 
 
-/*
+for (let i = 10; i > 0; i--) {
+  console.log(i)
+}
+
+
  * Prompt:
  *
  * Create a loop that counts down from 5 to -5, printing each number.
  */
+
+ for (let i = 5; i > -5; i--) {
+  console.log(i)
+ }
 
 /*
  * Prompt:
@@ -52,6 +65,10 @@ console.log(i)
  * Create a loop that counts from 0 to 50 in multiples of 2 (instead of 1),
  * printing each number.
  */
+
+for (let i = 0; i < 50; i++) {
+  console.log(i)
+}
 
 /*
  * Prompt:
@@ -64,7 +81,11 @@ console.log(i)
  *   - I found a 10. High five!
  */
 
-/*
+ for (let i = 0; i < 100; i+=5) {
+  console.log("I found a [ number ]. High five!")
+ }
+
+
  * Prompt:
  *
  * Create a variable called someNumber and assign it a random number between
@@ -74,9 +95,21 @@ console.log(i)
  *   - if someNumber is less than 30, print "that's a small number"
  *   - if someNumber is between 30 and 60, print "the number is medium sized"
  *   - if someNumber is greater than 60, print "We got a big one!"
- */
+ *
 
-/*
+let someNumber = 50
+
+if (someNumber < 30) {
+  console.log("that's a small number")
+}
+else if (someNumber > 30 && someNumber < 60) {
+  console.log("the number is medium sized")
+}
+else {
+  console.log("We got a big one!")
+}
+
+
  * Prompt:
  *
  * Iterate over the starWars array printing each character's name and index
@@ -84,7 +117,12 @@ console.log(i)
  * i.e. 0. Han, 1. C3PO, 2. R2D2
  */
 
-const StarWars = ['Han', 'C3PO', 'R2D2', 'Luke', 'Leia', 'Anakin'];
+
+const starWars = ['Han', 'C3PO', 'R2D2', 'Luke', 'Leia', 'Anakin'];
+
+for (let i = 0; i < starWars.length; i++) {
+console.log(i)
+}
 
 /*
  * Prompt:
@@ -92,6 +130,14 @@ const StarWars = ['Han', 'C3PO', 'R2D2', 'Luke', 'Leia', 'Anakin'];
  * Write a loop that pushes every even number between 0 and 100 into an array,
  * then print the array.
  */
+
+
+ let randomArray = []
+ for (let i = 0; i < 100; i +=2) {
+randomArray.push(i)
+}
+
+
 
 /*
  * Prompt:
@@ -101,6 +147,8 @@ const StarWars = ['Han', 'C3PO', 'R2D2', 'Luke', 'Leia', 'Anakin'];
  *
  * Hint: What does Math.floor() do?
  */
+
+
 
 let nums = [
   14,
@@ -130,6 +178,18 @@ let nums = [
   12
 ];
 
+let medianNumArray =  function () {
+medianNumArray.sort(medianNumArray.length)
+
+}
+
+let median = Math.floor(medianNumArray.length/2)
+if (mediumNumArray.length % 2)
+  return medianNumArray[median] 
+    
+console.log[median]
+  
+
 /*
  * Prompt:
  *
@@ -142,10 +202,23 @@ let nums = [
  * Inside the inner loop, print "i: ${i} / j: ${j}"
  */
 
-/*
+ for (let i = 1; i < 10; i++) {
+
+ for (let i = 11; i < 20; i = j) {
+
+  console.log("i: ${i} / j: ${j}")
+
+   }
+}
+
+
  * Prompt:
  *
  * Using nested loops, print the values inside the nested arrays.
  */
 
 let nestedArrays = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
+for (let i = 0; i < nestedArrays.length; i++) {
+  console.log[i]
+}
+}
